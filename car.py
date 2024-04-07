@@ -20,20 +20,13 @@ class Automobile(Vehicle):
         print(f"Type of roof: {self.roof}")
 
 def main():
-    # Store "car" into the vehicle type
     vehicle_type = "car"
-
-    # Asking user for details about the car
     year = input("Enter the year of the car: ")
     make = input("Enter the make of the car: ")
     model = input("Enter the model of the car: ")
     doors = input("Enter the number of doors (2 or 4): ")
     roof = input("Enter the type of roof (solid or sun roof): ")
-
-    # Creating an Automobile object with user input
     car = Automobile(vehicle_type, year, make, model, doors, roof)
-
-    # Displaying the details of the car
     car.display_info()
 
 if __name__ == "__main__":
